@@ -13,11 +13,13 @@
       * {
         boder: thin solid red;
       }
+
       #hero {
         background-image: url(./multimedia/Image\ here.png);
         background-repeat: no-repeat;
         background-size: cover;
       }
+
       #momo > div {
         display: grid;
         justify-content: center;
@@ -35,6 +37,23 @@
         color: #0a2e72;
 
         /* padding: 20px; */
+      }
+      #blog {
+        background-image: url(./multimedia/blog\ background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #doctor {
+        background-image: url(./multimedia/doctorbackground.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: flex-end;
+      }
+      footer {
+        background-image: url(./multimedia/footer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: flex-end;
       }
     </style>
   </head>
@@ -131,7 +150,7 @@
         Need a doctor for checkup? Call for an emergency services!
       </h1>
     </div>
-    <section class="bg-[#F8F8F8] h-[750px] max-lg:h-[900px] max-sm:h-[1900px]">
+    <section class="bg-[#F8F8F8] h-[750px] max-lg:h-[900px] max-sm:h-[1950px]">
       <div class="space-y-6 flex-col">
         <div class="text-center w-[40%] max-xl:w-[70%] mb-8 space-y-4 m-auto">
           <h1 class="text-4xl pt-15 font-bold">Our All Department</h1>
@@ -185,9 +204,11 @@
     <!-- manage health -->
 
     <div
-      class="bg-[#0A2E72] max-sm:w-[100%] h-[480px] flex max-sm:h-[820px] max-sm:flex-col items-center w-[60%] m-auto justify-around mb-20 relative max-lg:h-[400px] max-2xl:w-[70%] max-xl:w-[80%] max-sm:[90%]"
+      class="bg-[#0A2E72] max-sm:w-[100%] h-[480px] flex max-sm:h-[780px] max-sm:flex-col items-center w-[60%] m-auto justify-around mb-20 relative max-lg:h-[400px] max-2xl:w-[70%] max-xl:w-[80%] max-sm:[90%]"
     >
-      <div class="flex-col w-[40%] space-y-6 max-sm:w-[100%] max-sm:p-10">
+      <div
+        class="flex-col w-[40%] space-y-6 max-sm:w-[100%] max-sm:px-10 max-sm:mb-20 max-sm:mt-10"
+      >
         <p class="text-lg text-[#00FFC0]">Manage your health care</p>
         <h1 class="text-4xl text-[#FFFFFF] max-lg:text-3xl max-md:text-2xl">
           Trust us to be there to help all and make things weel again.
@@ -196,10 +217,12 @@
           All Doctors
         </button>
       </div>
-      <div class="w-[50%] max-sm:w-[90%]">
+      <div
+        class="w-[50%] h-[90%] max-sm:w-[90%] max-sm:h-[45%] max-sm:-translate-y-20"
+      >
         <img class="w-full h-full" src="./multimedia/bg.png" alt="img" />
       </div>
-      <div class="absolute max-sm:hidden">
+      <div class="absolute max-sm:hidden w-[80px] h-[80px]">
         <img src="./multimedia/playIcon.png" alt="" />
       </div>
     </div>
@@ -295,7 +318,9 @@
       </div>
     </section>
 
-    <section class="w-[100%] h-[600px] max-lg:h-[1000px] max-md:h-[1400px]">
+    <section
+      class="w-[100%] h-[600px] max-lg:h-[1000px] max-md:h-[1350px] max-sm:"
+    >
       <div id="first-grid" class="space-y-6 flex-col mt-20">
         <div
           class="col-span-4 text-center w-[40%] m-auto flex-col space-y-5 max-xl:w-[60%] max-lg:w-[80%] max-sm:w-[90%]"
@@ -310,7 +335,7 @@
         </div>
         <div
           id="momomo"
-          class="grid grid-cols-3 w-[70%] h-[380px] m-auto items-center font-bold text-lg mb-15 max-md:grid-cols-1 max-xl:w-[80%] max-sm:[90%] max-lg:grid-cols-2"
+          class="grid grid-cols-3 w-[70%] h-[380px] m-auto items-center font-bold text-lg mb-15 max-md:grid-cols-1 max-xl:w-[80%] max-sm:w-[100%] max-lg:grid-cols-2"
         >
           <div>
             <div>
@@ -326,5 +351,119 @@
         </div>
       </div>
     </section>
+    <section>
+      <div
+        id="blog"
+        class="w-[70%] m-auto flex space-y-4 max-md:flex-col p-10 items-center justify-between mb-10 text-white max-xl:w-[80%] max-sm:[90%]"
+      >
+        <div class="w-[35%] text-4xl font-bold max-xl:text-2xl max-md:w-[100%]">
+          Get Every Single Updates Here.
+        </div>
+        <div class="w-[50%] max-xl:text-[14px] max-md:w-[100%]">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,
+          corporis sequi! Qui et est accusamus sunt numquam soluta enim eum ea
+          illum error. Deleniti asperiores debitis reprehenderit quis, facilis
+          commodi.
+        </div>
+        <div class="w-[10%] max-md:w-[100%]">
+          <img src="./multimedia/Slider.png" alt="img" />
+        </div>
+      </div>
+      <!-- bottom -->
+      <div
+        class="w-[70%] h-[300px] max-lg:h-[600px] m-auto mb-10 flex justify-between max-xl:w-[80%] max-sm:[90%] max-lg:flex-col max-lg:space-y-10"
+      >
+        <div
+          id="doctor"
+          class="w-[45%] max-xl:w-[48%] h-full rounded-2xl flex items-center max-lg:w-[100%]"
+        >
+          <div
+            class="bg-white w-[40%] h-[97%] max-lg:w-[50%] max-sm:w-[70%] max-lg:h-[100%] border-blue-600 border-[3px] border rounded-2xl p-5 space-y-4 max-xl:space-y-3"
+          >
+            <p class="text-[#5E6F8E]">25, February, 2019</p>
+            <h1 class="text-[#0A2E72] font-bold max-xl:text-[15px]">
+              If you find your self constantly book marking and health sections.
+            </h1>
+            <p class="text-[#0088FF] text-lg">Read more</p>
+            <p class="text-[#5E6F8E]">5 hours ago</p>
+          </div>
+        </div>
+        <div
+          id="doctor"
+          class="w-[45%] max-xl:w-[48%] h-full rounded-2xl flex items-center max-lg:w-[100%]"
+        >
+          <div
+            class="bg-white w-[40%] h-[97%] max-lg:w-[50%] max-sm:w-[70%] max-lg:h-[100%] border-blue-600 border-[3px] border rounded-2xl items-center p-5 space-y-4 max-xl:space-y-3"
+          >
+            <p class="text-[#5E6F8E]">25, February, 2019</p>
+            <h1 class="text-[#0A2E72] font-bold max-xl:text-[15px]">
+              If you find your self constantly book marking and health sections.
+            </h1>
+            <p class="text-[#0088FF] text-lg">Read more</p>
+            <p class="text-[#5E6F8E]">5 hours ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div
+        class="w-[70%] m-auto pt-10 pb-10 max-lg:justify-around space-y-6 flex max-lg:flex-col items-center justify-between text-white max-xl:w-[80%] max-sm:[90%]"
+      >
+        <div class="w-[30%] space-y-4 max-lg:w-[100%]">
+          <div><img src="./multimedia/medicustyellow.png" alt="" /></div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
+            minima repellat iste obcaecati ex! Optio rerum vitae tempora hic
+            animi
+          </div>
+          <div><img src="./multimedia/Social.png" alt="img" /></div>
+        </div>
+
+        <div class="flex w-[60%] gap-20 max-lg:w-[100%] max-sm:flex-col">
+          <div class="w-[20%] flex-col space-y-6 max-sm:w-[100%]">
+            <h2 class="font-bold text-2xl">Departments</h2>
+            <ul class="space-y-2">
+              <li>Family Medicine</li>
+              <li>Women’s Health</li>
+              <li>Optician</li>
+              <li>Pediatrics</li>
+              <li>Dermatology</li>
+            </ul>
+          </div>
+          <div class="w-[20%] flex-col space-y-6 max-sm:w-[100%]">
+            <h2 class="font-bold text-2xl">Quick Links</h2>
+            <ul class="space-y-2">
+              <li>Our Doctors</li>
+              <li>Appointment</li>
+              <li>Blog Post</li>
+              <li>Shop Product</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div
+            class="w-[20%] flex-col space-y-6 max-lg:w-[30%] max-sm:w-[100%]"
+          >
+            <h2 class="font-bold text-2xl">Blog Post</h2>
+            <div class="max-lg:flex max-lg:gap-5">
+              <ul class="space-y-2">
+                <li class="text-[13px] text-[#FF9000]">22.05.2019</li>
+                <li class="text-[13px]">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                </li>
+              </ul>
+              <ul class="space-y-2">
+                <li class="text-[13px] text-[#FF9000]">22.05.2019</li>
+                <li class="text-[13px]">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full text-white py-3">
+        <p class="text-center">Copyright 2019  All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
