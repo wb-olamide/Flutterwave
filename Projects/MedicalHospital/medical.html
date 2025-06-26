@@ -4,12 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../src/output.css" />
     <link rel="stylesheet" href="./multimedia/medical.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+    <title>Medical Hospital</title>
     <style>
+      * {
+        boder: thin solid red;
+      }
       #hero {
         background-image: url(./multimedia/Image\ here.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
       }
       #momo > div {
         display: grid;
@@ -34,13 +41,15 @@
   <body>
     <header>
       <!-- top header -->
-      <div class="w-[70%] m-auto mt-4 flex justify-between">
+      <div
+        class="w-[70%] m-auto mt-4 flex justify-between max-xl:w-[80%] max-sm:w-[90%] max-sm:flex-col"
+      >
         <div class="flex gap-3">
           <div><img src="./multimedia/.png" alt="" /></div>
           <p>9470 Riverview, Zion 60099</p>
         </div>
 
-        <div class="flex space-x-14">
+        <div class="flex space-x-14 max-xl:flex-col">
           <div class="flex gap-3">
             <div><img src="./multimedia/inbox (1).png" alt="" /></div>
             <p>medicust@gmail.com</p>
@@ -54,19 +63,21 @@
       <!-- buttom div -->
       <div class="w-full h-[78px]">
         <div class="bg-[#0088FF] h-[78px] flex">
-          <div class="w-[40%] m-auto flex items-center space-x-30">
+          <div
+            class="w-[40%] m-auto flex items-center space-x-20 max-2xl:w-[70%] max-2xl:justify-between max-xl:space-x-0 max-xl:w-[80%] max-sm:w-[90%]"
+          >
             <div class="space-x-6 pt-2 pb-2 flex items-center justify-between">
-              <div class="">
+              <div class="w-[250px] mb-2 max-lg:w-[200px] max-sm:w-[150px]">
                 <img
-                  class="w-full h-full"
+                  class="w-[100%]"
                   src="./multimedia/Medicust logo.png"
-                  alt=""
+                  alt="img"
                 />
               </div>
             </div>
             <!-- list -->
-            <div class="text-white text-lg text-[#F9F9F9]">
-              <ul class="flex gap-8">
+            <div class="text-white text-lg text-[#F9F9F9] flex">
+              <ul class="flex gap-8 max-xl:hidden">
                 <li>
                   <a href="">Home</a>
                 </li>
@@ -76,9 +87,14 @@
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
               </ul>
+              <span class="material-symbols-outlined invisible max-xl:visible">
+                menu
+              </span>
             </div>
           </div>
-          <div class="bg-blue-900 h-full w-[30%] items-center flex">
+          <div
+            class="bg-blue-900 h-full w-[30%] items-center flex max-2xl:hidden"
+          >
             <button class="py-4 px-6 bg-[#0088FF] rounded-3xl ml-5 text-white">
               Get Appoinment
             </button>
@@ -86,11 +102,18 @@
         </div>
       </div>
     </header>
-    <section id="hero" class="w-[100%] h-[1050px] flex items-center">
-      <div class="w-[70%] m-auto">
-        <div class="flex-col w-[40%] space-y-4">
-          <p class="text-[#0088FF] text-2xl font-bold">Medical And Health</p>
-          <h1 class="text-5xl w-[80%]">
+    <section
+      id="hero"
+      class="w-[100%] h-[700px] pt-40 max-lg:pt-30 max-lg:h-[500px]"
+    >
+      <div class="w-[70%] m-auto max-xl:w-[80%] max-sm:w-[90%]">
+        <div
+          class="flex-col w-[45%] max-xl:w-[55%] max-lg:w-[65%] space-y-4 max-sm:w-[100%]"
+        >
+          <p class="text-[#0088FF] text-2xl font-bold max-md:text-xl">
+            Medical And Health
+          </p>
+          <h1 class="text-5xl max-md:text-3xl w-[80%]">
             A professional and friendly care provider.
           </h1>
           <p>Excepteur sint occaecat cupidatat non proident sunt officia</p>
@@ -101,15 +124,17 @@
       </div>
       <!-- second hero -->
     </section>
-    <div class="w-[70%] mt-15 mb-15 m-auto">
-      <h1 class="text-[45px] w-[70%] text-[#0A2E72] font-bold">
+    <div class="w-[70%] mt-15 mb-15 m-auto max-xl:w-[80%] max-sm:w-[90%]">
+      <h1
+        class="text-[45px] w-[70%] text-[#0A2E72] font-bold max-lg:text-[30px] max-lg:w-[90%] max-xl:w-[80%] max-sm:text-[25px] max-sm:w-[100%]"
+      >
         Need a doctor for checkup? Call for an emergency services!
       </h1>
     </div>
-    <section class="bg-[#F8F8F8] h-[700px]">
-      <div id="first-grid" class="space-y-6 flex-col">
-        <div class="col-span-4 text-center w-[40%] m-auto">
-          <h1 class="text-4xl pt-15">Our All Department</h1>
+    <section class="bg-[#F8F8F8] h-[750px] max-lg:h-[900px] max-sm:h-[1900px]">
+      <div class="space-y-6 flex-col">
+        <div class="text-center w-[40%] max-xl:w-[70%] mb-8 space-y-4 m-auto">
+          <h1 class="text-4xl pt-15 font-bold">Our All Department</h1>
           <p class="text-lg">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore fugiatsunt culpa officia deserunt mollit anim est
@@ -118,7 +143,7 @@
         </div>
         <div
           id="momo"
-          class="grid grid-cols-4 w-[70%] h-[380px] m-auto items-center font-bold text-lg mb-15"
+          class="grid grid-cols-4 w-[70%] h-[380px] m-auto items-center font-bold text-lg mb-15 max-lg:grid-cols-3 max-sm:grid-cols-1 max-xl:w-[80%] max-sm:w-[90%]"
         >
           <div>
             <div>
@@ -160,27 +185,33 @@
     <!-- manage health -->
 
     <div
-      class="bg-[#0A2E72] h-[508px] flex items-center w-[60%] m-auto justify-around mb-40 relative"
+      class="bg-[#0A2E72] max-sm:w-[100%] h-[480px] flex max-sm:h-[820px] max-sm:flex-col items-center w-[60%] m-auto justify-around mb-20 relative max-lg:h-[400px] max-2xl:w-[70%] max-xl:w-[80%] max-sm:[90%]"
     >
-      <div class="flex-col w-[40%] space-y-4">
+      <div class="flex-col w-[40%] space-y-6 max-sm:w-[100%] max-sm:p-10">
         <p class="text-lg text-[#00FFC0]">Manage your health care</p>
-        <h1 class="text-5xl text-[#FFFFFF]">
+        <h1 class="text-4xl text-[#FFFFFF] max-lg:text-3xl max-md:text-2xl">
           Trust us to be there to help all and make things weel again.
         </h1>
         <button class="py-4 px-6 rounded-3xl text-white bg-[#0088FF]">
           All Doctors
         </button>
       </div>
-      <div class=""><img src="./multimedia/bg.png" alt="img" /></div>
-      <div class="absolute">
+      <div class="w-[50%] max-sm:w-[90%]">
+        <img class="w-full h-full" src="./multimedia/bg.png" alt="img" />
+      </div>
+      <div class="absolute max-sm:hidden">
         <img src="./multimedia/playIcon.png" alt="" />
       </div>
     </div>
 
-    <section class="w-[100%] h-[900px]">
+    <section
+      class="w-[100%] h-[850px] max-md:h-[950px] max-lg:h-[1200px] max-sm:h-[3100px]"
+    >
       <div id="first-grid" class="space-y-6 flex-col">
-        <div class="col-span-4 text-center w-[40%] m-auto flex-col space-y-5">
-          <h1 class="text-4xl">Professional Care Provider</h1>
+        <div
+          class="col-span-4 text-center w-[40%] max-xl:w-[70%] mb-3 max-md:w-[90%] m-auto flex-col space-y-5"
+        >
+          <h1 class="text-4xl font-bold">Professional Care Provider</h1>
           <p class="text-lg mb-10">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore fugiat
@@ -188,7 +219,7 @@
         </div>
         <div
           id="momomo"
-          class="grid grid-cols-4 w-[70%] h-[380px] m-auto items-center font-bold text-lg mb-15"
+          class="grid grid-cols-4 w-[70%] h-[380px] space-y-5 m-auto items-center font-bold text-lg mb-15 max-lg:grid-cols-3 max-sm:grid-cols-1 max-xl:w-[80%] max-sm:w-[90%]"
         >
           <div>
             <div>
@@ -219,11 +250,17 @@
         </div>
       </div>
     </section>
-    <section class="w-100% bg-[#0088FF] h-[400px] flex items-center">
-      <div class="w-[70%] m-auto flex justify-between">
-        <div class="bg-white w-[25%] rounded-xl px-8 py-15">
+    <section
+      class="w-100% bg-[#0088FF] h-[400px] flex items-center max-md:h-[650px] max-sm:h-[750px]"
+    >
+      <div
+        class="w-[70%] m-auto flex max-md:flex-col justify-between max-xl:w-[80%] max-sm:[90%]"
+      >
+        <div
+          class="bg-white w-[35%] rounded-xl space-y-4 px-7 py-15 max-xl:w-[40%] max-md:w-[100%] max-md:mt-5"
+        >
           <h1 class="text-4xl">We always ready for a challenge.</h1>
-          <div class="flex items-center space-x-5">
+          <div class="flex items-center space-x-6">
             <div class="w-[40px] h-[40px]">
               <img src="./multimedia/headphones.png" alt="img" />
             </div>
@@ -236,16 +273,18 @@
               <p>medicust@gmail.com</p>
             </div>
             <div class="w-[40px] h-[40px]">
-              <img src="./multimedia/inboxyellow.png" alt="" />
+              <img class="w-[100%]" src="./multimedia/inboxyellow.png" alt="" />
             </div>
           </div>
         </div>
-        <div class="w-[50%] text-white flex-col space-y-6 mt-10">
-          <h2>
+        <div
+          class="w-[50%] text-white flex-col space-y-6 mt-10 max-md:w-[100%]"
+        >
+          <h2 class="max-sm:text-[14px]">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillium dolor eu fugiat nulla pariatur
           </h2>
-          <p>
+          <p class="max-sm:text-[14px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
             incidunt dolorem quod atque quo soluta accusamus aliquid veniam
             officiis sunt? Repudiandae enim minus asperiores aperiam doloremque
@@ -256,18 +295,22 @@
       </div>
     </section>
 
-    <section class="w-[100%] h-[900px]">
+    <section class="w-[100%] h-[600px] max-lg:h-[1000px] max-md:h-[1400px]">
       <div id="first-grid" class="space-y-6 flex-col mt-20">
-        <div class="col-span-4 text-center w-[40%] m-auto flex-col space-y-5">
-          <h1 class="text-4xl">Patient Testimonials</h1>
-          <p class="text-lg mb-10">
+        <div
+          class="col-span-4 text-center w-[40%] m-auto flex-col space-y-5 max-xl:w-[60%] max-lg:w-[80%] max-sm:w-[90%]"
+        >
+          <h1 class="text-4xl font-bold max-sm:text-2xl">
+            Patient Testimonials
+          </h1>
+          <p class="text-lg mb-10 max-lg:mb-5 max-sm:text-[14px]">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore fugiat
           </p>
         </div>
         <div
           id="momomo"
-          class="grid grid-cols-3 w-[70%] h-[380px] m-auto items-center font-bold text-lg mb-15"
+          class="grid grid-cols-3 w-[70%] h-[380px] m-auto items-center font-bold text-lg mb-15 max-md:grid-cols-1 max-xl:w-[80%] max-sm:[90%] max-lg:grid-cols-2"
         >
           <div>
             <div>
